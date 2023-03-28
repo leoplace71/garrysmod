@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "MODELS/cs_italy/banana_8x"
+	"$bumpmap" "MODELS/cs_italy/banana_8x_n"
+	"$nodecal" "0"
+}
