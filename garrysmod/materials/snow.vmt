@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$basetexture" "Nature/snowfloor001a"
+	"%keywords" "Snow"
+	
+}
