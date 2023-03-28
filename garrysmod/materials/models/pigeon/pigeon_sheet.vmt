@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Pigeon/pigeon_sheet"
+	"$alphatest" 1
+	"$bumpmap" "models/pigeon/pigeon_n"
+
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongexponent" "5"
+	"$phongfresnelranges" "[1 1. 1]"
+
+	"$rimlight" "1"
+	"$rimlightboost" "1"
+	"$rimlightexponent" "5"
+}

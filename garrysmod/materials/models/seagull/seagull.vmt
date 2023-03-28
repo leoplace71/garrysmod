@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Seagull/seagull"
+	"$bumpmap" "models/seagull/seagull_n"
+	"$alphatest" 1
+
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongexponent" "5"
+	"$phongfresnelranges" "[.25 1.25 1]"
+}
