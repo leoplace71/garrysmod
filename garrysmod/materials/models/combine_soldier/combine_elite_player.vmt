@@ -1,0 +1,58 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/combine_soldier/combine_elite_player"
+	"$bumpmap" "models/combine_soldier/combine_elite_normal"
+
+	"$phong" "1"
+	"$phongboost" "5"
+	"$phongexponenttexture" "models/combine_soldier/combine_elite_phong"
+	"$phongalbedotint" "1"										
+	"$phongfresnelranges"	"[.1 .5  1]"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "8"
+	"$rimlightboost" "0.5"
+	
+	// ------------------------------------------------------------------------
+	// PLAYER COLOR CUSTOMIZATION
+	// ------------------------------------------------------------------------
+	
+	// This particular model doesn't use the long chain of proxies seen
+	// elsewhere, since only a small part of the model is coloured. If you're
+	// looking for an example, try models/alyx/plyr_sheet.vmt :)
+	
+	"$blendtintbybasealpha" "1" 
+ 	"$blendtintcoloroverbase" "0"
+	
+	// --- Test values. Comment the PlayerColor proxy to use one of these.
+	// "$color2" "{0 0 0}" // Black
+	// "$color2" "{255 0 0}" // Blue (default)
+	// "$color2" "{59 121 160}" // Blue (TF2)
+	// "$color2" "{180 52 41}" // Red (TF2)
+	// "$color2" "{100 72 58}" // Brown
+	// "$color2" "{140 208 112}" // Green
+	// "$color2" "{248 166 202}" // Pink
+	// "$color2" "{160 100 140}" // Purple
+	// "$color2" "{242 168 96}" // Yellow (gold-ish)
+	
+	Proxies
+	{
+		PlayerColor
+		{
+			"resultVar" "$color2"
+		}
+		Multiply // doing this to make brighter & more saturated
+		{
+			"srcVar1" "$selfillumtint"
+			"srcVar2" "$phongboost"
+			"resultVar" "$selfillumtint"
+		}
+		Clamp
+		{
+			"min" "0.10"
+			"max" "3.00"
+			"srcVar1" "$selfillumtint"
+			"resultVar" "$selfillumtint"
+		}
+	}
+}
