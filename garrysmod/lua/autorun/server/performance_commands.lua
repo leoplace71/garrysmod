@@ -1,0 +1,6 @@
+RunConsoleCommand("mem_max_heapsize", "131072")
+RunConsoleCommand("mem_max_heapsize_dedicated", "131072")
+RunConsoleCommand("mem_min_heapsize", "131072")
+RunConsoleCommand("threadpool_affinity", "64")
+RunConsoleCommand("decalfrequency", "10")
+RunConsoleCommand("gmod_physiterations", "2")
